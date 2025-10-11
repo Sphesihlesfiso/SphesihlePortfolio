@@ -1,0 +1,105 @@
+.Header-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d0d0d;           /* dark background */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 188, 212, 0.2); /* soft aqua glow */
+  border-bottom: 1px solid rgba(0, 188, 212, 0.1);
+}
+
+/* Logo */
+.Header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bcd4;                      /* aqua accent */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Menu Toggle (mobile) */
+.Header-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  cursor: pointer;
+  display: none;
+  transition: color 0.3s ease;
+}
+
+.Header-toggle:hover {
+  color: #00bcd4;
+}
+
+/* Navigation */
+.Header-nav {
+  display: flex;
+}
+
+.Header-List-container {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Items */
+.Header-list-item {
+  font-weight: 500;
+  cursor: pointer;
+  color: #f5f5f5;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+.Header-list-item.active {
+  color: #00ffff;
+  background-color: #00bcd4;
+  padding: 8px;
+  border-radius: 14px;
+  
+}
+.Header-list-item:hover {
+  color: white;
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .Header-toggle {
+    display: block;
+  }
+
+  .Header-nav {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 30%;
+    height: 40vh; /* 40% of viewport height */
+    background-color: #121212;           /* dark dropdown */
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 188, 212, 0.2);
+    overflow-y: auto; /* scroll if menu items exceed 40% height */
+  }
+
+  .Header-nav.open {
+    display: flex;
+  }
+
+  .Header-List-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Header-list-item {
+    font-size: 1.1rem;
+  }
+}
