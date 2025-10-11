@@ -7,7 +7,8 @@ export default function Home() {
     <div className='Home-container'>
       <div className='Picture-paragraph'>
         <div className='Picture'>
-          <img className="Home-img" src="/My Photo.jpg" alt="Sphesihle Mabaso" />
+          <img className="Home-img" src={`${process.env.PUBLIC_URL}/images/MyPhoto.jpg`} alt="Sphesihle Mabaso" />
+
         </div>
 
         <div className='Text'>
@@ -39,7 +40,8 @@ export default function Home() {
       </div>
 
       <div className='Buttons'>
-        <a href="/Sphesihle_Mabaso_ATS_Friendly_CV.docx" download>
+            <a href={`${process.env.PUBLIC_URL}/Sphesihle_Mabaso_ATS_Friendly_CV.docx`} download>
+
           <button>Get Resume</button>
         </a>
         <a href="#contact">
