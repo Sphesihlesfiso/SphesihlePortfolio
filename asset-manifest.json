@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SphesihleDev/static/css/main.41b0a2bc.css",
+    "main.js": "/SphesihleDev/static/js/main.6ef50e6c.js",
+    "static/js/453.ad7768ec.chunk.js": "/SphesihleDev/static/js/453.ad7768ec.chunk.js",
+    "index.html": "/SphesihleDev/index.html",
+    "main.41b0a2bc.css.map": "/SphesihleDev/static/css/main.41b0a2bc.css.map",
+    "main.6ef50e6c.js.map": "/SphesihleDev/static/js/main.6ef50e6c.js.map",
+    "453.ad7768ec.chunk.js.map": "/SphesihleDev/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41b0a2bc.css",
+    "static/js/main.6ef50e6c.js"
+  ]
+}
