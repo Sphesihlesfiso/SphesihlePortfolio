@@ -20,7 +20,7 @@ const CertificationsArray = [
   },
   {
     name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
-    image: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=9153A568F92B85D4642C08BFC0E335C5EA3EC6AD468AF7714F6035012C90DD37",
+    image: "Ai Profesional Foundations.png",
     completed: "100",
     teacher: "Oracle Univercity"
   },
