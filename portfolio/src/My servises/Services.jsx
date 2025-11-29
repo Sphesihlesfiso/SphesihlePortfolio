@@ -7,10 +7,10 @@ export default function Services() {
       <h1 className='tittle'>My Services</h1>
       <ul className='Services-container'>
         <li className='Service'>
-          <i className="bi bi-laptop"></i> Web Development
+          <i className="bi bi-laptop"></i> Website Development
         </li>
         <li className='Service'>
-          <i className="bi bi-phone"></i> Mobile App Development
+          <i className="bi bi-phone"></i> Web App Development
         </li>
         <li className='Service'>
           <i className="bi bi-plug"></i> Backend API Integration
@@ -22,13 +22,10 @@ export default function Services() {
           <i className="bi bi-columns-gap"></i> Responsive UI Design
         </li>
         <li className='Service'>
-          <i className="bi bi-database"></i> Database Management (PostgreSQL, Supabase)
+          <i className="bi bi-database"></i> Database Management (PostgreSQL)
         </li>
         <li className='Service'>
           <i className="bi bi-git"></i> Version Control (Git & GitHub)
-        </li>
-        <li className='Service'>
-          <i className="bi bi-cup-hot"></i> Java & Spring Boot Applications
         </li>
         <li className='Service'>
           <i className="bi bi-terminal"></i> Python Scripting & Automation

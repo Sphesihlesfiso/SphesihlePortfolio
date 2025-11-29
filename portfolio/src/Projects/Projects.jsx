@@ -17,7 +17,7 @@ export default function Projects() {
                 key={index}
                 title={project.title}
                 image={project.image}
-                video={project.video}
+                link={project.link}
                 description={project.description}
                 />
             ))}

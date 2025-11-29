@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Project.css";
 
-export default function ProjectCard({ title, image, video, description, techStack }) {
+export default function ProjectCard({ title, image, link, description}) {
   const [showDescription, setShowDescription] = useState(false);
+  
 
   return (
     <div className="ProjectCard">
@@ -21,23 +22,20 @@ export default function ProjectCard({ title, image, video, description, techStac
         {showDescription ? "Hide Description" : "Show Description"}
       </button>
 
-      {video && (
-        <a href={`${process.env.PUBLIC_URL}${video}`} target="_blank" rel="noopener noreferrer">
-          <button className="view-button">Project Demo</button>
-        </a>
-      )}
+      
+    
+
+    {link && (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <button className="view-button">Project Demo</button>
+    </a>)}
+
+
+      
 
       {showDescription && <p className="project-description">{description}</p>}
 
-      {techStack && (
-        <div className="tech-stack">
-          {techStack.map((tech, index) => (
-            <span key={index} className="tech-badge">
-              {tech}
-            </span>
-          ))}
-        </div>
-      )}
+      
     </div>
   );
 }

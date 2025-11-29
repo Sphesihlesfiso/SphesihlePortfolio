@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           <p className='Home-paragraph'>
-            I’m passionate about building secure, scalable web applications and websites that solve real-world problems. Whether you want a buisness or Personal website you've found  the right person for the job.
+            I'm passionate about building secure, web applications and websites that solve real-world problems.Whether you want a buisness or personal website you've found  the right person for the job.
           </p>
 
          
@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       <div className='Buttons'>
-            <a href={`${process.env.PUBLIC_URL}/Sphesihle_Mabaso_ATS_Friendly_CV.docx`} download>
+            <a href={`${process.env.PUBLIC_URL}/Sphesihle_Mabaso.docx`} download>
 
           <button>Get Resume</button>
         </a>

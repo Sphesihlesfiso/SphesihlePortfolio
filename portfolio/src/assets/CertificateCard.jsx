@@ -1,19 +1,20 @@
 import React from 'react';
 import './CertificationCard.css';
 
-export default function CertificateCard({ name, image, completed, teacher }) {
+export default function CertificateCard({ name, image }) {
+  
   return (
     <div className="Certificate-container Certificate">
       <div className="Certificate-image">
-        {image.startsWith('http') ? (
-          <img src={image} alt={name} style={{ width: '100%', borderRadius: '12px' }} />
-        ) : (
-          <span  dangerouslySetInnerHTML={{ __html: image }} />
-        )}
+        <img
+          src={image.startsWith('http') 
+            ? image 
+            : `${process.env.PUBLIC_URL}/images/${image}`}
+          alt={name}
+          style={{ width: '100%',height:'150px', borderRadius: '12px' }}
+        />
       </div>
       <h3>{name}</h3>
-      <p><strong>Instructor:</strong> {teacher}</p>
-      <p><strong>Completed:</strong> {completed}%</p>
     </div>
   );
 }
