@@ -1,12 +1,29 @@
 /* Reset & Base Setup */
 :root {
-  --primary-color: red; /* Bootstrap blue */
+  --primary-color: red; 
   --secondary-color: #6c757d;
-  --white-color: #f5f5f5;
-  --black-bg: white;
-  
+  --white-bg: white;
+  --black-bg: black;
+  --text-white:white;
+  --text-black:black;
   --card-primary-bg: #1a1a1a;
-  --card-secondary-bg: rgb(247, 240, 240);
+  --card-secondary-bg: rgb(247, 224, 224);
+}
+
+
+
+/* Default: Dark Theme */
+:root[data-theme="dark"] {
+  --bg-color: var(--black-bg);
+  --text-color: var(--text-white);
+  --card-bg: var(--card-primary-bg);
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+  --bg-color: var(--white-bg);
+  --text-color: var(--text-black);
+  --card-bg: var(--card-secondary-bg);
 }
 
 html,
@@ -18,8 +35,8 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Inter", "Segoe UI", sans-serif;
-  background-color: var(--black-bg); /* deep dark background */
-  color: var(--white-color); /* soft white text */
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Ensure all elements respect box-sizing */
@@ -69,5 +86,5 @@ button:active {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--black-bg); /* slightly lighter dark for contrast */
+  background-color: var(--bg-color); /* slightly lighter dark for contrast */
 }

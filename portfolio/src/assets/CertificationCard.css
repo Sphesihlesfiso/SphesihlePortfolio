@@ -1,5 +1,5 @@
 .Certificate-container {
-  background-color: #1a1a1a;       /* dark card */
+  background-color: var(--card-bg);       /* dark card */
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0, 188, 212, 0.1);

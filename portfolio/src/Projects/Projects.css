@@ -1,7 +1,7 @@
 .Projects-container {
   min-height: 100vh; /* full screen height */
   width: 100%;
-  background-color: var(--black-bg);
+  background-color: var(--bg-color);
  
   font-family: 'Poppins', sans-serif;
   display: flex;

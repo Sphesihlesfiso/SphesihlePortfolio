@@ -1,7 +1,7 @@
 .Certifications {
   min-height: 100vh; /* fill full screen height */
-  background-color: var(--black-bg); /* dark background */
-  color: #f5f5f5;
+  background-color: var(--bg-color); /* dark background */
+  
   font-family: "Poppins", sans-serif;
   padding: 4.5% 0;
   box-sizing: border-box;
