@@ -1,16 +1,14 @@
 /* Reset & Base Setup */
 :root {
-  --primary-color: red; 
+  --primary-color: red;
   --secondary-color: #6c757d;
   --white-bg: white;
   --black-bg: black;
-  --text-white:white;
-  --text-black:black;
+  --text-white: white;
+  --text-black: black;
   --card-primary-bg: #1a1a1a;
-  --card-secondary-bg: rgb(247, 224, 224);
+  --card-secondary-bg: #f8f9fa;
 }
-
-
 
 /* Default: Dark Theme */
 :root[data-theme="dark"] {

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './Header.css';
-import useActiveSection from './ActiveSection'; // adjust path as needed
-
+import React, { useState } from "react";
+import "./Header.css";
+import useActiveSection from "./ActiveSection"; // adjust path as needed
+import ThemeToggle from "./Theme";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const activeSection = useActiveSection();
@@ -14,21 +14,31 @@ export default function Header() {
         ☰
       </button>
 
-      <nav className={`Header-nav ${isOpen ? 'open' : ''}`}>
+      <nav className={`Header-nav ${isOpen ? "open" : ""}`}>
         <ul className="Header-List-container">
-          {['home', 'about', 'services', 'certifications', 'projects', 'contact'].map((section) => (
+          {[
+            "home",
+            "about",
+            "services",
+            "certifications",
+            "projects",
+            "contact",
+          ].map((section) => (
             <li key={section}>
               <a
                 href={`#${section}`}
-                className={`Header-list-item ${activeSection === section ? 'active' : ''}`}
+                className={`Header-list-item ${
+                  activeSection === section ? "active" : ""
+                }`}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1).replace('-', ' ')}
+                {section.charAt(0).toUpperCase() +
+                  section.slice(1).replace("-", " ")}
               </a>
             </li>
           ))}
+          <ThemeToggle />
         </ul>
       </nav>
     </header>
   );
 }
-
