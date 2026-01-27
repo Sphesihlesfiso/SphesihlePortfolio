@@ -15,7 +15,7 @@ const Projects_array = [
   {
     title: "ThinkPad Notes",
     description:
-      "A note-taking app built with React, Node.js, TypeScript, and PostgreSQL, enabling users to create, edit, and organize notes with a clean, responsive interface.",
+      "A note-taking app built with React, Node.js, TypeScript, and MongoDb, enabling users to create, edit, and organize notes with a clean, responsive interface.",
     image: "/images/Thinkboard App.png",
   },
   {
