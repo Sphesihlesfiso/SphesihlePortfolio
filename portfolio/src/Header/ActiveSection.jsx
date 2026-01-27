@@ -1,11 +1,18 @@
-import { useEffect, useState } from 'react';
-
+import { useEffect, useState } from "react";
+//own custom hook
 function useActiveSection() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'certifications', 'projects', 'contact'];
+      const sections = [
+        "home",
+        "about",
+        "services",
+        "certifications",
+        "projects",
+        "contact",
+      ];
       for (let id of sections) {
         const el = document.getElementById(id);
         if (el) {
@@ -18,11 +25,11 @@ function useActiveSection() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // run on mount
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return activeSection;
 }
-export default useActiveSection
+export default useActiveSection;
