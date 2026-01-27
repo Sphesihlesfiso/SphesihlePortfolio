@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-//own custom hook
+//own custom hook function
 function useActiveSection() {
   const [activeSection, setActiveSection] = useState("");
 
