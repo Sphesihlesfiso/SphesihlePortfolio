@@ -11,7 +11,11 @@ function ThemeToggle() {
 
   return (
     <button id="theme-toggle" onClick={toggleTheme}>
-      {theme==="dark"?< i class="bi bi-brightness-high"></i>:< i class="bi bi-moon-fill"></i>}
+      {theme === "dark" ? (
+        <i class="bi bi-brightness-high"></i>
+      ) : (
+        <i class="bi bi-moon"></i>
+      )}
     </button>
   );
 }
