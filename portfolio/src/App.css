@@ -8,26 +8,31 @@
   --text-black: black;
   --card-primary-bg: #1a1a1a;
   --card-secondary-bg: #f8f9fa;
-}
 
-/* Default: Dark Theme */
-:root[data-theme="dark"] {
+  /* Default Theme: Dark */
   --bg-color: var(--black-bg);
   --text-color: var(--text-white);
   --card-bg: var(--card-primary-bg);
 }
 
-/* Light Theme */
+/* Explicit Light Theme */
 :root[data-theme="light"] {
   --bg-color: var(--white-bg);
   --text-color: var(--text-black);
   --card-bg: var(--card-secondary-bg);
 }
 
+/* Explicit Dark Theme (Optional, if you toggle back) */
+:root[data-theme="dark"] {
+  --bg-color: var(--black-bg);
+  --text-color: var(--text-white);
+  --card-bg: var(--card-primary-bg);
+}
+
 html,
 body {
-  height: 100%; /* ensure full viewport height */
-  width: 100%; /* full width */
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,54 +40,4 @@ body {
   font-family: "Inter", "Segoe UI", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-}
-
-/* Ensure all elements respect box-sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* App container */
-.App {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Buttons */
-button {
-  background-color: #00bcd4; /* bright aqua accent */
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #0097a7;
-  transform: translateY(-2px);
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-/* Full-screen section helper */
-.full-section {
-  min-height: 100vh; /* full screen height */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--bg-color); /* slightly lighter dark for contrast */
 }

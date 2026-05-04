@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="Buttons">
-        <a href={`${process.env.PUBLIC_URL}/Sphesihle_Mabaso.docx`} download>
+        <a href={`${process.env.PUBLIC_URL}/Sphesihle_Mabaso_CV.docx`} download>
           <button>Get Resume</button>
         </a>
         <a href="#contact">
